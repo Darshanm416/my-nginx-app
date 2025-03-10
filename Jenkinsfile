@@ -39,7 +39,7 @@ pipeline {
                     sh '''
                         docker stop myapp || true
                         docker rm myapp || true
-                        docker run -d -p 8080:80 --name myapp $DOCKER_IMAGE:latest
+                        docker run -d -p 9090:80 --name myapp $DOCKER_IMAGE:latest
                     '''
                 }
             }
